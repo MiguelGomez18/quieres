@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=95473&format=png&color=000000" type="image/x-icon">
+    <title>Di que si :(</title>
+  
+</head>
+<body>
+
+<form
+  action="https://formspree.io/f/xnqerlny"
+  method="POST"
+>
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label>¿Quieres ser mi novia?</label>
+    </center>
+
+    <input type="submit" name="respuesta" class="bottom" id="si" value="Si :3"> 
+
+    <input type="submit" class="bottom1" name="mala" id="no" value="No :(">
+
+</form>
+
+</body>
+</html>
+
+<style>
+    @charset "utf-8";
+    html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
+     padding: 0;
+     margin: 0;
+     border: 0;
+     font-size: 100%;
+     font-weight: normal;
+    }
+    ul { padding-left: 1.4em; list-style:square; }
+    q:before, q:after { content:''; }
+    html{
+        scroll-behavior: unset;
+    }
+    
+    body{
+        color: rgb(70, 96, 96);
+        background-image: url(https://images.pexels.com/photos/220053/pexels-photo-220053.jpeg);
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
+    }
+    
+    label{
+        font-size: 50px;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 900;
+        filter: drop-shadow(0px 0px 2px white);
+    }
+    
+    .bottom{
+        position: absolute;
+        top: 50%;
+        border: 0;
+        transform: translateY(-50%);
+        text-decoration: none;
+        background: rgb(13, 221, 27);
+        color: black;
+        padding: 25px 25px;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+    
+    .bottom:hover {
+        background: rgb(20, 150, 20);
+        transform: scale(1.1);
+    }
+    
+    .bottom1:hover {
+        background: rgb(237, 0, 0);
+        transform: scale(1.1);
+    }
+    
+    .bottom1{
+        position: absolute;
+        top: 50%;
+        border: 0;
+        transform: translateY(-50%);
+        text-decoration: none;
+        background: rgb(237, 0, 0);
+        color: black;
+        padding: 25px 25px;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+    
+    #si{
+        left: 20%;
+        transform: translateY(-50%) translateX(-20%);
+    }
+    
+    #no{
+        left: 80%;
+        transform: translateY(-50%) translateX(-80%);
+    }
+    
+</style>
+
+<script>
+
+    let si=document.getElementById('si');
+    si.addEventListener("click" ,function(e){
+        alert("Gracias, Se que dirias que si, te quiero, ♡_♡");
+    });
+    
+    let no = document.getElementById('no');       
+    no.addEventListener("mousemove", function(e) {
+        let x = Math.round(Math.random() * 80 + 10); 
+        let y = Math.round(Math.random() * 70 + 10); 
+        no.style.left = x + "%";
+        no.style.top = y + "%";
+    });
+
+    
+</script>
